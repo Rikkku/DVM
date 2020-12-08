@@ -1,5 +1,115 @@
-@charset "utf-8";
-.banner img {
-	height:1000px;
-	background-size: cover;align-self: auto;
+
+<html>
+<head>
+<style>
+#img1{
+margin-left: 40%;
+height: 200px;
+width: 200px;
+position: absolute;
+animation: 1s ani1;
 }
+#img2{
+margin-left: 35%;
+height: 100px;
+width: 100px;
+position: absolute;
+margin-top: 50px;
+animation: 1s ani2;
+}
+#img3{
+margin-left: 55%;
+height: 100px;
+width: 100px;
+position: absolute;
+margin-top: 50px;
+animation: 1s ani3; 
+}
+@-webkit-keyframes ani1{
+from{
+margin-left: 40%;
+height: 200px;
+width: 200px;
+position: absolute;
+}
+to{
+margin-left: 55%;
+height: 100px;
+width: 100px;
+position: absolute;
+margin-top: 50px;
+}
+}
+@-webkit-keyframes ani2{
+from{
+margin-left: 35%;
+height: 100px;
+width: 100px;
+position: absolute;
+margin-top: 50px;
+}
+to{
+margin-left: 40%;
+height: 200px;
+width: 200px;
+position: absolute;
+margin-top:  0px;
+
+}
+}
+
+@-webkit-keyframes ani3{
+from{
+margin-left: 55%;
+height: 100px;
+width: 100px;
+position: absolute;
+margin-top: 50px;
+}
+to{
+margin-left: 35%;
+height: 100px;
+width: 100px;
+position: absolute;
+}
+}
+
+
+#img4{
+margin-left: 40%;
+height: 200px;
+width: 200px;
+position: absolute;
+}
+#img5{
+margin-left: 35%;
+height: 100px;
+width: 100px;
+position: absolute;
+margin-top: 50px;
+}
+#img6{
+margin-left: 55%;
+height: 100px;
+width: 100px;
+position: absolute;
+margin-top: 50px;
+}
+</style>
+<body>
+<div id="div" >
+<img src="3.jpg" id="img6" >
+<img src="2.jpg" id="img5" >
+<img src="1.jpg" id="img4" >
+</div>
+<input type="button" onclick="a()" >
+<script>
+function a(){
+var div = document.getElementById("div");
+div.innerHTML = '<img src="1.jpg" id="img2" ><img src="3.jpg" id="img3" ><img src="2.jpg" id="img1" >';
+}
+
+</script>
+</body>
+</head>
+</html>
