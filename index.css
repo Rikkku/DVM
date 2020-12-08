@@ -2,6 +2,11 @@
 <html>
 <head>
 <style>
+@charset "utf-8";
+.banner img {
+	height:1000px;
+	background-size: cover;align-self: auto;
+}
 #img1{
 margin-left: 40%;
 height: 200px;
